@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.disney.studio.qa</groupId>
+    <artifactId>selenium-toolbox</artifactId>
+    <version>4.3.0.2.44.0</version>
+    <packaging>jar</packaging>
+    <properties>
+        <selenium.version>2.44.0</selenium.version>
+        <groovy.version>2.4.4</groovy.version>
+        <phantomjs.driver.version>1.2.1</phantomjs.driver.version>
+        <junit.version>4.11</junit.version>
+        <apache.commons.io.version>1.3.2</apache.commons.io.version>
+        <webbit.version>0.4.15</webbit.version>
+        <gmavenplus.plugin.version>1.5</gmavenplus.plugin.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <clover.version>3.3.0</clover.version>
+        <jimfs.version>1.0</jimfs.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                <version>${gmavenplus.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compilecode</id>
+                        <goals>
+                            <goal>addSources</goal>
+                            <goal>addTestSources</goal>
+                            <goal>compile</goal>
+                            <!--<goal>testGenerateStubs</goal>-->
+                            <goal>testCompile</goal>
+                            <goal>removeStubs</goal>
+                            <goal>removeTestStubs</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>groovydoc</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>groovydoc</goal>
+                        </goals>
+                        <configuration>
+                            <scope>protected</scope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>javadoc</classifier>
+                            <classesDirectory>${project.build.directory}/gapidocs</classesDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <!-- if including source jars, use the no-fork goal otherwise
+                both the Groovy sources and Java stub sources will get included in your jar -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>maven-clover2-plugin</artifactId>
+                <version>${clover.version}</version>
+                <configuration>
+                    <licenseLocation>/opt/bamboo/data/clover.license</licenseLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-server</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+        </dependency>
+        <!-- The webDriver version of PhantomJS -->
+        <!--
+            Bumped PhantomJSDriver version to 1.2.1 and altered the groupId to use 'com.codeborne'.  This was necessary
+            because the latest version of Selenium moved the location of the Proxies.class, which results
+            in the following errors being generated when using PhantomJSDriver 1.1.0
+
+                Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.browserlaunchers.Proxies
+
+            reference https://github.com/detro/ghostdriver/issues/397, for further details
+        -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>phantomjsdriver</artifactId>
+            <version>${phantomjs.driver.version}</version>
+			<exclusions>
+					<exclusion>
+							<groupId>org.seleniumhq.selenium</groupId>
+							<artifactId>selenium-remote-driver</artifactId>
+					</exclusion>
+			</exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${apache.commons.io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webbitserver</groupId>
+            <artifactId>webbit</artifactId>
+            <version>${webbit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.jimfs</groupId>
+            <artifactId>jimfs</artifactId>
+            <version>${jimfs.version}</version>
+        </dependency>
+        <!-- SLF4J Deps -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>Walt Disney Studio Technology Team Artifactory-releases</name>
+            <url>http://seg-rm-atl01.studio.disney.com:8081/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
+</project>

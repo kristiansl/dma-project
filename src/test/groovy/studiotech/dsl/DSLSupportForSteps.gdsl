@@ -1,0 +1,24 @@
+package studiotech.dsl
+
+def scriptContext = context(
+        filetypes: ['.groovy'],
+        pathRegexp: ".*/test/groovy/studiotech/steps/.*",
+        scope: closureScope())
+
+contributor(scriptContext) {
+    def methods1 = findClass('studiotech.steps.support.DMAWorld').methods
+    def methods2 = findClass('studiotech.dsl.DmaDSL').methods
+    def methods = methods1 + methods2
+
+    methods.each { def aMethod ->
+
+        def params = [:]
+        aMethod.parameterList.parameters.each { param ->
+            params.put(
+                    param.name,
+                    com.intellij.psi.util.TypeConversionUtil.erasure(param.type).canonicalText)
+        }
+
+        method name: aMethod.name, type: com.intellij.psi.util.TypeConversionUtil.erasure(aMethod.returnType)?.canonicalText, params: params
+    }
+}

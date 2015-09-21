@@ -1,0 +1,256 @@
+-------------------------------------------------------------------------------
+Test set: studiotech.RunDmaITCase
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 27.128 sec <<< FAILURE!
+Given an unauthenticated guest has navigated to the discover page(Scenario: An unauthenticated guest views the Discover page)  Time elapsed: 0.012 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a0039b3811e74a32ac0e1f186b13137a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.openqa.selenium.support.ui.Wait$until.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:392)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$1.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:407)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$0.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy:81)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickElement$0.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickLink(Html5Accessor.groovy:100)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickLink.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.clickLink(Page.groovy:114)
+	at com.disney.studio.qa.stbx.pageobject.Page$clickLink.callCurrent(Unknown Source)
+	at studiotech.pages.DmaBasePage.clickDiscoverLink(DmaBasePage.groovy:81)
+	at studiotech.pages.DmaBasePage$clickDiscoverLink.call(Unknown Source)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:64)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:53)
+	at studiotech.dsl.DmaDSL$navigateToPage.call(Unknown Source)
+	at studiotech.steps.NavigateSteps$_run_closure1.doCall(NavigateSteps.groovy:10)
+	at ✽.Given an unauthenticated guest has navigated to the discover page(features/discover/discover.feature:8)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"li#nav-discover a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+Command duration or timeout: 54 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a0039b3811e74a32ac0e1f186b13137a
+*** Element info: {Using=css selector, value=li#nav-discover a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.remote.Augmenter$CompoundHandler.intercept(Augmenter.java:191)
+	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a.findElement(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:528)
+	at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:521)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at org.openqa.selenium.support.ui.Wait$until.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:392)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$1.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:407)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$0.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy:81)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickElement$0.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickLink(Html5Accessor.groovy:100)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickLink.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.clickLink(Page.groovy:114)
+	at com.disney.studio.qa.stbx.pageobject.Page$clickLink.callCurrent(Unknown Source)
+	at studiotech.pages.DmaBasePage.clickDiscoverLink(DmaBasePage.groovy:81)
+	at studiotech.pages.DmaBasePage$clickDiscoverLink.call(Unknown Source)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:64)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:53)
+	at studiotech.dsl.DmaDSL$navigateToPage.call(Unknown Source)
+	at studiotech.steps.NavigateSteps$_run_closure1.doCall(NavigateSteps.groovy:10)
+	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
+	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"li#nav-discover a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+
+Scenario: An unauthenticated guest views the Discover page  Time elapsed: 0.014 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a0039b3811e74a32ac0e1f186b13137a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.openqa.selenium.support.ui.Wait$until.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:392)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$1.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:407)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$0.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy:81)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickElement$0.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickLink(Html5Accessor.groovy:100)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickLink.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.clickLink(Page.groovy:114)
+	at com.disney.studio.qa.stbx.pageobject.Page$clickLink.callCurrent(Unknown Source)
+	at studiotech.pages.DmaBasePage.clickDiscoverLink(DmaBasePage.groovy:81)
+	at studiotech.pages.DmaBasePage$clickDiscoverLink.call(Unknown Source)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:64)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:53)
+	at studiotech.dsl.DmaDSL$navigateToPage.call(Unknown Source)
+	at studiotech.steps.NavigateSteps$_run_closure1.doCall(NavigateSteps.groovy:10)
+	at ✽.Given an unauthenticated guest has navigated to the discover page(features/discover/discover.feature:8)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"li#nav-discover a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+Command duration or timeout: 54 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a0039b3811e74a32ac0e1f186b13137a
+*** Element info: {Using=css selector, value=li#nav-discover a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.remote.Augmenter$CompoundHandler.intercept(Augmenter.java:191)
+	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a.findElement(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:528)
+	at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:521)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at org.openqa.selenium.support.ui.Wait$until.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:392)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$1.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.waitUntilElementIsClickable(Page.groovy:407)
+	at com.disney.studio.qa.stbx.pageobject.Page$waitUntilElementIsClickable$0.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy:81)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickElement(Html5Accessor.groovy)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickElement$0.callCurrent(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor.clickLink(Html5Accessor.groovy:100)
+	at com.disney.studio.qa.stbx.pageobject.accessors.Accessor$clickLink.call(Unknown Source)
+	at com.disney.studio.qa.stbx.pageobject.Page.clickLink(Page.groovy:114)
+	at com.disney.studio.qa.stbx.pageobject.Page$clickLink.callCurrent(Unknown Source)
+	at studiotech.pages.DmaBasePage.clickDiscoverLink(DmaBasePage.groovy:81)
+	at studiotech.pages.DmaBasePage$clickDiscoverLink.call(Unknown Source)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:64)
+	at studiotech.dsl.DmaDSL.navigateToPage(DmaDSL.groovy:53)
+	at studiotech.dsl.DmaDSL$navigateToPage.call(Unknown Source)
+	at studiotech.steps.NavigateSteps$_run_closure1.doCall(NavigateSteps.groovy:10)
+	at cucumber.runtime.groovy.GroovyBackend.invoke(GroovyBackend.java:155)
+	at cucumber.runtime.groovy.GroovyStepDefinition$1.call(GroovyStepDefinition.java:71)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.groovy.GroovyStepDefinition.execute(GroovyStepDefinition.java:68)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"li#nav-discover a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'chef', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '3.13.0-32-generic', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selenium Toolbox : Home Page</title>
+    <script type="text/javascript">
+        window.document.onkeydown = function (e)
+        {
+            if (!e) e = event;
+            if (e.keyCode == 27 )
+                document.getElementById("firstname").value = "ESCAPE KEY PRESSED"
+            if (e.keyCode == 13)
+                document.getElementById("firstname").value = "RETURN KEY PRESSED"
+        }
+    </script>
+</head>
+<body>
+    <h2>Home page</h2>
+    <p class="opening-paragraph">This page has been put together for the sole purpose of supporting Selenium Toolbox's unit tests. This is the <em>Home</em>
+        page.
+    </p>
+    <p class="page-object-paragraph">
+        <cite>PageObjects can be thought of as facing in two directions simultaneously.
+        Facing towards the developer of a test, they represent the services offered by a particular page. Facing
+        away from the developer, they should be the only thing that has a deep knowledge of the structure of the HTML of a page
+        (or part of a page) It's simplest to think of the methods on a Page Object as offering the
+        "services" that a page offers rather than exposing the details and mechanics of the page.
+        As an example, think of the inbox of any web-based email system. Amongst the services that it
+        offers are typically the ability to compose a new email, to choose to read a single email, and
+        to list the subject lines of the emails in the inbox. How these are implemented shouldn't matter
+        to the test.</cite>
+        <br>
+        <em>&nbsp;&nbsp;&nbsp;&nbsp;--From the <a href="https://code.google.com/p/selenium/wiki/PageObjects">Selenium Page Objects page</a></em>
+    </p>
+    <br>
+    <div>
+        <form id="form1">
+            <label>First name:
+                <input id="firstname" type="text" name="firstname">
+            </label>
+            <br>
+            <label>Last name:
+                <input type="text" name="lastname">
+            </label>
+            <button id="send-name" type="button">Send Name</button>
+            <br>
+            <br>
+            <label>Disabled field:
+                <input type="text" name="disabled-field" disabled>
+            </label>
+            <br>
+            <br>
+            <label>Hidden field:
+                <input type="hidden" name="hidden-field">
+            </label>
+            <br>
+            <br>
+            <input id="bike-checkbox" type="checkbox" name="vehicle" value="bike">I have a bike
+            <br>
+            <input id="car-checkbox" type="checkbox" name="vehicle" value="car">I have a car
+            <br>
+            <input id="airplane-checkbox" type="checkbox" name="vehicle" value="airplane">I have a plane
+            <br>
+            <input id="firefly-checkbox" type="checkbox" name="vehicle" value="firefly" checked>I have a firefly
+            <br>
+            <br>
+            Project Type:
+            <select id="project-template">
+                <option value></option>
+                <optgroup label="Library Mastering">
+                    <option value="1">2K</option>
+                    <option value="4">4K</option>
+                    <option value="3">HD</option>
+                    <option value="2">HD Plus</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            Gender:
+            <br>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female
+            <br>
+            <br>
+            Comments:
+            <br>
+            <textarea rows="4" cols="50" name="comments">Enter text here...</textarea>
+            <br>
+            <br>
+            <button id="go-to-about" type="button" onclick="window.location.href='./about.html'">Go To About</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <table border="1" id="simple-table">
+            <thead>
+                <tr>
+                    <th>Movie Title</th>
+                    <th>Director</th>
+                    <th>Actors</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Thor</td>
+                    <td>Kenneth Branagh</td>
+                    <td>Chris Hemsworth, Anthony Hopkins, Natalie Portman</td>
+                </tr>
+                <tr>
+                    <td>Pirates of the Caribbean: The Curse of the Black Pearl</td>
+                    <td>Gore Verbinski</td>
+                    <td>Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightly</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>Home Page</td>
+                    <td><a id="link-to-about-page" href="./about.html">About Page</a> </td>
+                    <td><a id="link-to-contact-page" href="./contact.html">Contact Page</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

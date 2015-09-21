@@ -1,0 +1,123 @@
+INFO  [main] 2015-09-21 10:45:17.035: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 10:45:17.037: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 10:45:17.038: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 10:45:17.038: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = false
+INFO  [main] 2015-09-21 10:45:17.038: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = localhost
+INFO  [main] 2015-09-21 10:45:17.038: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 4444
+INFO  [main] 2015-09-21 10:45:17.038: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://localhost:4444/wd/hub
+INFO  [main] 2015-09-21 10:45:17.038: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 10:45:37.779: [com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor]: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a :: Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26' System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}] Session ID: 31f8bd51-8747-b64b-98ea-280aa7769682
+INFO  [main] 2015-09-21 11:06:49.296: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 11:06:49.298: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 11:06:49.298: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 11:06:49.298: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = false
+INFO  [main] 2015-09-21 11:06:49.298: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = kristianmeiersl
+INFO  [main] 2015-09-21 11:06:49.299: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 69c9ea29-59c8-4b3a-9909-18b1b05343f6
+INFO  [main] 2015-09-21 11:06:49.299: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 11:06:49.299: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 11:07:09.622: [com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor]: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a :: Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26' System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}] Session ID: 389c7d5e-6f71-414e-9afd-cbf9db0059bd
+INFO  [main] 2015-09-21 12:29:02.316: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:29:02.317: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:29:02.317: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:29:02.318: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = false
+INFO  [main] 2015-09-21 12:29:02.321: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = null
+INFO  [main] 2015-09-21 12:29:02.321: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = null
+INFO  [main] 2015-09-21 12:29:02.322: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 12:29:02.322: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 12:29:21.835: [com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor]: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a :: Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26' System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45' Driver info: org.openqa.selenium.firefox.FirefoxDriver Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=40.0.3, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}] Session ID: 62ec52bc-bc6e-e44e-bcfa-06dd7e0a5de0
+INFO  [main] 2015-09-21 12:29:21.988: [studiotech.steps.support.DMAWorld]: SauceOnDemandSessionID=null job-name=An unauthenticated guest views the Discover page
+INFO  [main] 2015-09-21 12:33:05.457: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:33:05.458: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:33:05.458: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:33:05.459: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:33:05.462: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = null
+INFO  [main] 2015-09-21 12:33:05.463: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = null
+INFO  [main] 2015-09-21 12:33:05.463: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 12:33:05.463: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+INFO  [main] 2015-09-21 12:33:14.468: [studiotech.environment.TestEnvironment]: Running test against the following session: '1f50abef91124832b10738e6fe4b8cff'
+ERROR [main] 2015-09-21 12:33:27.756: [com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor]: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a :: Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26' System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45' Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$e9719c4e Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=1f50abef91124832b10738e6fe4b8cff, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}] Session ID: 1f50abef91124832b10738e6fe4b8cff
+INFO  [main] 2015-09-21 12:33:28.332: [studiotech.steps.support.DMAWorld]: SauceOnDemandSessionID=1f50abef91124832b10738e6fe4b8cff job-name=An unauthenticated guest views the Discover page
+INFO  [main] 2015-09-21 12:37:07.870: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:37:07.871: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:37:07.872: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:37:07.872: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:37:07.872: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = localhost
+INFO  [main] 2015-09-21 12:37:07.872: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 4444
+INFO  [main] 2015-09-21 12:37:07.872: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://localhost:4444/wd/hub
+INFO  [main] 2015-09-21 12:37:07.872: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 12:37:08.556: [studiotech.environment.TestEnvironment]: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: driver.version: RemoteWebDriver
+INFO  [main] 2015-09-21 12:37:46.112: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:37:46.114: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:37:46.114: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:37:46.114: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:37:46.114: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = localhost
+INFO  [main] 2015-09-21 12:37:46.114: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 4444
+INFO  [main] 2015-09-21 12:37:46.115: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://localhost:4444/wd/hub
+INFO  [main] 2015-09-21 12:37:46.115: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 12:37:46.847: [studiotech.environment.TestEnvironment]: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: driver.version: RemoteWebDriver
+INFO  [main] 2015-09-21 12:42:24.009: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:42:24.010: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:42:24.010: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:42:24.010: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:42:24.011: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = @ondemand.saucelabs.com
+INFO  [main] 2015-09-21 12:42:24.011: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 80
+INFO  [main] 2015-09-21 12:42:24.011: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 12:42:24.011: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 12:42:25.176: [studiotech.environment.TestEnvironment]: Sauce Labs Authentication Error.
+You used username 'None' and access key 'null' to authenticate, which are not valid Sauce Labs credentials.
+
+The following desired capabilities were received:
+{'browserName': 'firefox',
+ 'platform': 'ANY',
+ 'version': ''}
+Command duration or timeout: 695 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+INFO  [main] 2015-09-21 12:42:57.789: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:42:57.791: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:42:57.791: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:42:57.791: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:42:57.791: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = @ondemand.saucelabs.com
+INFO  [main] 2015-09-21 12:42:57.791: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 80
+INFO  [main] 2015-09-21 12:42:57.792: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 12:42:57.792: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+ERROR [main] 2015-09-21 12:42:58.632: [studiotech.environment.TestEnvironment]: Sauce Labs Authentication Error.
+You used username 'None' and access key 'null' to authenticate, which are not valid Sauce Labs credentials.
+
+The following desired capabilities were received:
+{'browserName': 'firefox',
+ 'platform': 'ANY',
+ 'version': ''}
+Command duration or timeout: 372 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+INFO  [main] 2015-09-21 12:46:17.521: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:46:17.523: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:46:17.524: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:46:17.524: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:46:17.524: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com
+INFO  [main] 2015-09-21 12:46:17.524: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 80
+INFO  [main] 2015-09-21 12:46:17.524: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 12:46:17.525: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+INFO  [main] 2015-09-21 12:46:24.623: [studiotech.environment.TestEnvironment]: Running test against the following session: '624448ec12cb40e1830e52d99ede3649'
+ERROR [main] 2015-09-21 12:46:37.647: [com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor]: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a :: Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26' System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45' Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$d8e0a4b4 Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=624448ec12cb40e1830e52d99ede3649, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}] Session ID: 624448ec12cb40e1830e52d99ede3649
+INFO  [main] 2015-09-21 12:46:38.121: [studiotech.steps.support.DMAWorld]: SauceOnDemandSessionID=624448ec12cb40e1830e52d99ede3649 job-name=An unauthenticated guest views the Discover page
+INFO  [main] 2015-09-21 12:47:39.968: [studiotech.environment.TestEnvironment]: Test environment settings:
+INFO  [main] 2015-09-21 12:47:39.970: [studiotech.environment.TestEnvironment]: 	 Test Environment            = qa
+INFO  [main] 2015-09-21 12:47:39.970: [studiotech.environment.TestEnvironment]: 	 Browser                     = firefox
+INFO  [main] 2015-09-21 12:47:39.971: [studiotech.environment.TestEnvironment]: 	 Execute Test Remotely       = true
+INFO  [main] 2015-09-21 12:47:39.971: [studiotech.environment.TestEnvironment]: 	 Remote Host                 = kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com
+INFO  [main] 2015-09-21 12:47:39.972: [studiotech.environment.TestEnvironment]: 	 Remote Port                 = 80
+INFO  [main] 2015-09-21 12:47:39.972: [studiotech.environment.TestEnvironment]: 	 Remote Hub                  = http://kristianmeiersl:69c9ea29-59c8-4b3a-9909-18b1b05343f6@ondemand.saucelabs.com:80/wd/hub
+INFO  [main] 2015-09-21 12:47:39.972: [studiotech.environment.TestEnvironment]: 	 Base URL                    = https://qa.disneymoviesanywhere.com/?home
+INFO  [main] 2015-09-21 12:47:48.899: [studiotech.environment.TestEnvironment]: Running test against the following session: 'a0039b3811e74a32ac0e1f186b13137a'
+ERROR [main] 2015-09-21 12:48:01.823: [com.disney.studio.qa.stbx.pageobject.accessors.Html5Accessor]: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a :: Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26' System info: host: 'Sauces-MacBook-Air-2.local', ip: '10.35.5.153', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45' Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}] Session ID: a0039b3811e74a32ac0e1f186b13137a
+INFO  [main] 2015-09-21 12:48:02.364: [studiotech.steps.support.DMAWorld]: SauceOnDemandSessionID=a0039b3811e74a32ac0e1f186b13137a job-name=An unauthenticated guest views the Discover page
