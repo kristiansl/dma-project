@@ -381,9 +381,9 @@ class TestEnvironment {
         }
 
         if (isTestRemote) {
-            if (System.getenv('bamboo_buildKey')) {
-                println ">>>>> BAMBOO BUILD KEY = ${System.getenv('bamboo_buildKey')}"
-                capabilities.setCapability('build', System.getenv('bamboo_buildKey'))
+            if (System.getenv('SAUCE_BAMBOO_BUILDNUMBER')) {
+                println ">>>>> BAMBOO BUILD KEY = ${System.getenv('SAUCE_BAMBOO_BUILDNUMBER')}"
+                capabilities.setCapability('build', System.getenv('SAUCE_BAMBOO_BUILDNUMBER'))
             }
             return new Augmenter().augment(new RemoteWebDriver(new URL(remoteHub), capabilities));
         } else {
