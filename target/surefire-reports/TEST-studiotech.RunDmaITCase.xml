@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="studiotech.RunDmaITCase" time="0.042" errors="2" skipped="1">
+<testsuite tests="3" failures="0" name="studiotech.RunDmaITCase" time="0.055" errors="2" skipped="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib"/>
@@ -66,18 +66,18 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: An unauthenticated guest views the Discover page" name="Given an unauthenticated guest has navigated to the discover page" time="0.012">
+  <testcase classname="Scenario: An unauthenticated guest views the Discover page" name="Given an unauthenticated guest has navigated to the discover page" time="0.015">
     <error message="Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at org.openqa.selenium.support.ui.Wait$until.call(Unknown Source)
@@ -104,13 +104,13 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;
 System info: host: &apos;chef&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_60&apos;
 Driver info: driver.version: unknown
-Command duration or timeout: 54 milliseconds
+Command duration or timeout: 57 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced
 *** Element info: {Using=css selector, value=li#nav-discover a}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
@@ -120,7 +120,7 @@ Session ID: a0039b3811e74a32ac0e1f186b13137a
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.remote.Augmenter$CompoundHandler.intercept(Augmenter.java:191)
-	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a.findElement(&lt;generated&gt;)
+	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699.findElement(&lt;generated&gt;)
 	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
 	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
@@ -191,11 +191,11 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
 </error>
     <system-out>Feature: Discover content
   As a user on the Discover page
@@ -204,23 +204,23 @@ Driver info: driver.version: unknown
 Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced
 </system-out>
   </testcase>
-  <testcase classname="Scenario: An unauthenticated guest views the Discover page" name="Scenario: An unauthenticated guest views the Discover page" time="0.014">
+  <testcase classname="Scenario: An unauthenticated guest views the Discover page" name="Scenario: An unauthenticated guest views the Discover page" time="0.018">
     <error message="Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: li#nav-discover a
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a
+Driver info: org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at org.openqa.selenium.support.ui.Wait$until.call(Unknown Source)
@@ -247,13 +247,13 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 03:03:16&apos;
 System info: host: &apos;chef&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;3.13.0-32-generic&apos;, java.version: &apos;1.8.0_60&apos;
 Driver info: driver.version: unknown
-Command duration or timeout: 54 milliseconds
+Command duration or timeout: 57 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=a0039b3811e74a32ac0e1f186b13137a, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a0039b3811e74a32ac0e1f186b13137a
+Capabilities [{applicationCacheEnabled=true, rotatable=false, hasMetadata=true, databaseEnabled=true, handlesAlerts=true, version=40.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=da613b6d3de5491d9591510dbe069ced, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=firefox, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: da613b6d3de5491d9591510dbe069ced
 *** Element info: {Using=css selector, value=li#nav-discover a}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
@@ -263,7 +263,7 @@ Session ID: a0039b3811e74a32ac0e1f186b13137a
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.remote.Augmenter$CompoundHandler.intercept(Augmenter.java:191)
-	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$8c22d65a.findElement(&lt;generated&gt;)
+	at org.openqa.selenium.remote.RemoteWebDriver$$EnhancerByCGLIB$$96944699.findElement(&lt;generated&gt;)
 	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
 	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
@@ -334,14 +334,14 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
 System info: host: &apos;Sauces-MacBook-Air-2.local&apos;, ip: &apos;10.35.5.153&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_45&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous3277279312936050259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous1951905402085067634webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
 </error>
   </testcase>
-  <testcase classname="Scenario: An unauthenticated guest views the Discover page" name="Then the discover page shall be displayed" time="0.016">
+  <testcase classname="Scenario: An unauthenticated guest views the Discover page" name="Then the discover page shall be displayed" time="0.022">
     <skipped/>
   </testcase>
 </testsuite>
